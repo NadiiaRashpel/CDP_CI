@@ -74,12 +74,10 @@
                     <includes>
                         <include>**/*.java</include>
                     </includes>
-<<<<<<< HEAD
                     <argLine>-Xmx512m</argLine>
-=======
+
                     <parallel>classes</parallel>
                     <forkCount>4</forkCount>
->>>>>>> 6d502dbbb183e3df41696b0e4c24fe36763992b3
                 </configuration>
                 <executions>
                     <execution>
