@@ -82,6 +82,7 @@
                     <argLine>-Xmx512m</argLine>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
                     <parallel>classes</parallel>
+                    <threadCount>4</threadCount>
                     <forkCount>4</forkCount>
                 </configuration>
                 <executions>
