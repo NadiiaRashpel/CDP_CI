@@ -1,0 +1,27 @@
+<acceptance-test-run title="I can add new places at the OSM via Breadcrumbs" name="I can add new places at the OSM via Breadcrumbs" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="18" timestamp="2017-09-03T14:09:10.714+03:00">
+  <user-story id="add-new-place" name="Add new place" path="src/test/resources/features/workplaceManagement/addNewPlace.feature"/>
+  <tags>
+    <tag name="Workplace management" type="capability"/>
+    <tag name="Workplace management/Add new place" type="feature"/>
+  </tags>
+  <test-group name="Given As Users with IT Department and Super Admin role" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Log in</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I select a &lt;Location&gt; via Breadcrumbs" result="SUCCESS">
+    <test-step result="SUCCESS" duration="0">
+      <description>Select location</description>
+    </test-step>
+  </test-group>
+  <test-group name="And I put information about &lt;Place&gt;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Fill in places info</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then added &lt;Place&gt; with status &lt;Status&gt; should appear on a &lt;ViewOfficeMap&gt;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Verifies places status on view office map</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

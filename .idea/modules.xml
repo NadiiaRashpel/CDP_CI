@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serenity_with_cucumber.iml" filepath="$PROJECT_DIR$/.idea/modules/serenity_with_cucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serenity_with_cucumber_main.iml" filepath="$PROJECT_DIR$/.idea/modules/serenity_with_cucumber_main.iml" group="serenity_with_cucumber" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/serenity_with_cucumber_test.iml" filepath="$PROJECT_DIR$/.idea/modules/serenity_with_cucumber_test.iml" group="serenity_with_cucumber" />
+      <module fileurl="file://$PROJECT_DIR$/serenitywithcucumber_V2.iml" filepath="$PROJECT_DIR$/serenitywithcucumber_V2.iml" />
+    </modules>
+  </component>
+</project>

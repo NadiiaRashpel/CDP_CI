@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="serenity_with_cucumber" />
+        <module name="serenitywithcucumber_V2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="serenity_with_cucumber" target="1.8" />
+      <module name="serenity_with_cucumber_main" target="1.8" />
+      <module name="serenity_with_cucumber_test" target="1.8" />
+      <module name="serenitywithcucumber_V2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
