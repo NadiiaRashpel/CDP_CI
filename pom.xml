@@ -59,6 +59,11 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.trivago.rta</groupId>
+            <artifactId>cucable-plugin</artifactId>
+            <version>0.0.5</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -72,10 +77,10 @@
                 <version>2.19.1</version>
                 <configuration>
                     <includes>
-                        <include>**/*.java</include>
+                        <include>**/*Test.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
-
+                    <useUnlimitedThreads>true</useUnlimitedThreads>
                     <parallel>classes</parallel>
                     <forkCount>4</forkCount>
                 </configuration>
