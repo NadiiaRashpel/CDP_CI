@@ -1,4 +1,4 @@
-@smoke_1
+@regression_1
 Feature: Add new place
   In order to manage places at the OSM
   As Users with IT Department and Super Admin role

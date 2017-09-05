@@ -1,3 +1,4 @@
+@smoke_1
 Feature: Add place
   In order to manage places at the OSM
   As Users with IT Department and Super Admin role
