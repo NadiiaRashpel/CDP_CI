@@ -16,24 +16,24 @@
     </properties>
 
     <repositories>
-      <repository>
-        <snapshots>
-        <enabled>false</enabled>
-        </snapshots>
-        <id>central</id>
-        <name>bintray</name>
-        <url>http://jcenter.bintray.com</url>
-      </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
     </repositories>
     <pluginRepositories>
-      <pluginRepository>
-        <snapshots>
-        <enabled>false</enabled>
-        </snapshots>
-        <id>central</id>
-        <name>bintray-plugins</name>
-        <url>http://jcenter.bintray.com</url>
-      </pluginRepository>
+        <pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>bintray-plugins</name>
+            <url>http://jcenter.bintray.com</url>
+        </pluginRepository>
     </pluginRepositories>
 
     <dependencies>
@@ -66,34 +66,64 @@
         </dependency>
     </dependencies>
     <build>
+
         <plugins>
+            <plugin>
+                <groupId>com.github.temyers</groupId>
+                <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+                <version>4.0.0</version>
+                <executions>
+                    <execution>
+                        <id>generateRunners</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>generateRunners</goal>
+                        </goals>
+                        <configuration>
+                            <glue>com.panasenko.stepdefinitions</glue>
+                            <featuresDirectory>src/test/resources/features</featuresDirectory>
+                            <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                            <tags>
+                                <tag>${SUITE}</tag>
+                            </tags>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
-            </plugin>
-            <plugin>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.19.1</version>
                 <configuration>
+                    <forkCount>3</forkCount>
+                    <reuseForks>true</reuseForks>
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
-                    <argLine>-Xmx512m</argLine>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
-                    <parallel>classes</parallel>
-                    <threadCount>4</threadCount>
-                    <forkCount>4</forkCount>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
+            <!-- <plugin>
+                 <artifactId>maven-failsafe-plugin</artifactId>
+                 <version>2.19.1</version>
+                 <configuration>
+                     <includes>
+                         <include>**/*Test.java</include>
+                     </includes>
+                     <argLine>-Xmx512m</argLine>
+                     <useUnlimitedThreads>true</useUnlimitedThreads>
+                     <parallel>classes</parallel>
+                     <threadCount>4</threadCount>
+                     <forkCount>4</forkCount>
+                 </configuration>
+                 <executions>
+                     <execution>
+                         <goals>
+                             <goal>integration-test</goal>
+                             <goal>verify</goal>
+                         </goals>
+                     </execution>
+                 </executions>
+             </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

@@ -1,5 +1,5 @@
 @regression_1
-Feature: Add new place
+Feature:  Regression Add new place
   In order to manage places at the OSM
   As Users with IT Department and Super Admin role
   I want to be able to add new places
