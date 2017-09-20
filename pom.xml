@@ -64,6 +64,16 @@
             <artifactId>cucable-plugin</artifactId>
             <version>0.0.5</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.4-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>3.0.4-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
 
