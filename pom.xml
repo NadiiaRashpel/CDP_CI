@@ -65,14 +65,20 @@
             <version>0.0.5</version>
         </dependency>
         <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>3.0.3</version>
+        <scope>test</scope>
+            </dependency>
+           <dependency>
             <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>3.0.4-SNAPSHOT</version>
+            <artifactId>json-path</artifactId>
+            <version>3.0.3</version>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>3.0.4-SNAPSHOT</version>
+            <version>3.0.3</version>
         </dependency>
     </dependencies>
     <build>
